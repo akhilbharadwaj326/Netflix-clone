@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+        </head>
+    <!-- Header Section -->
+    <header class="container">
+        <div class="logo">
+            <img src="netflix-logo.jpeg" alt="Netflix Logo">
+        </div>
+        <div class="nav-links">
+            <select class="language-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+            <a href="#" class="sign-in-btn">Sign In</a>
+        </div>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+            
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            /* Header styles */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+            }
+            
+            .logo img {
+                height: 36px;
+            }
+            
+            .nav-links {
+                display: flex;
+                gap: 20px;
+            }
+            
+            .sign-in-btn {
+                background-color: #e50914;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            
+            /* Hero section */
+            .hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background-hero.jpeg') center/cover no-repeat;
+                min-height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border-bottom: 8px solid #222;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .email-form {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 100%;
+                max-width: 650px;
+            }
+            
+            @media (min-width: 768px) {
+                .email-form {
+                    flex-direction: row;
+                }
+            }
+            
+            .email-input {
+                flex: 1;
+                padding: 16px;
+                font-size: 1rem;
+            }
+            
+            .get-started-btn {
+                background-color: #e50914;
+                color: white;
+                padding: 16px 24px;
+                border: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            
+            /* Feature sections */
+            .feature {
+                padding: 50px 0;
+                border-bottom: 8px solid #222;
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+            
+            .feature-text {
+                flex: 1;
+            }
+            
+            .feature-img {
+                flex: 1;
+            }
+            
+            .feature h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            .feature p {
+                font-size: 1.5rem;
+            }
+            
+            /* FAQ section */
+            .faq {
+                padding: 50px 0;
+                text-align: center;
+                border-bottom: 8px solid #222;
+            }
+            
+            .faq h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .faq-list {
+                margin: 0 auto;
+                max-width: 800px;
+                margin-bottom: 3rem;
+            }
+            
+            .faq-item {
+                margin-bottom: 8px;
+                background-color: #303030;
+                text-align: left;
+            }
+            
+            .faq-question {
+                padding: 20px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+            
+            .faq-answer {
+                padding: 20px;
+                font-size: 1.2rem;
+                border-top: 1px solid black;
+                display: none;
+            }
+            
+            /* Footer */
+            footer {
+                padding: 50px 0;
+            }
+            
+            .footer-links {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 16px;
+                margin-bottom: 30px;
+            }
+            
+            .footer-link {
+                color: #757575;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+            
+            .footer-text {
+                color: #757575;
+                font-size: 0.9rem;
+            }
+        </style>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" class="email-input" placeholder="Email address">
+                <button class="get-started-btn">Get Started &gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="feature container">
+        <div class="feature-text">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="feature-img">
+            <img src="Tv-image.jpeg" alt="TV feature">
+        </div>
+    </section>
+
+    <section class="feature container">
+        <div class="feature-img">
+            <img src="phone.jpeg" alt="Mobile feature">
+        </div>
+        <div class="feature-text">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+    </section>
+
+    <section class="feature container">
+        <div class="feature-text">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="feature-img">
+            <img src="devices.webp" alt="Devices feature">
+        </div>
+    </section>
+
+    <section class="feature container">
+        <div class="feature-img">
+            <img src="kids-feature.jpeg" alt="Kids feature">
+        </div>
+        <div class="feature-text">
+            <h2>Create profiles for kids</h2>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">What is Netflix?</div>
+                    <div class="faq-answer">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How much does Netflix cost?</div>
+                    <div class="faq-answer">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $6.99 to $19.99 a month. No extra costs, no contracts.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Where can I watch?</div>
+                    <div class="faq-answer">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I cancel?</div>
+                    <div class="faq-answer">Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What can I watch on Netflix?</div>
+                    <div class="faq-answer">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+                </div>
+            </div>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email-form">
+                <input type="email" class="email-input" placeholder="Email address">
+                <button class="get-started-btn">Get Started &gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p class="footer-text">Questions? Call 1-844-505-2993</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Help Center</a>
+            <a href="#" class="footer-link">Account</a>
+            <a href="#" class="footer-link">Media Center</a>
+            <a href="#" class="footer-link">Investor Relations</a>
+            <a href="#" class="footer-link">Jobs</a>
+            <a href="#" class="footer-link">Ways to Watch</a>
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Cookie Preferences</a>
+            <a href="#" class="footer-link">Corporate Information</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Speed Test</a>
+            <a href="#" class="footer-link">Legal Notices</a>
+            <a href="#" class="footer-link">Only on Netflix</a>
+        </div>
+        <p class="footer-text">Netflix US</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript to toggle FAQ questions
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    // Close all other answers
+                    document.querySelectorAll('.faq-answer').forEach(item => {
+                        item.style.display = 'none';
+                    });
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</html>
